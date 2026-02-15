@@ -1,0 +1,69 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36" version="29.3.8">
+  <diagram name="Page-1" id="ZsJI7Zot89HQpDcF6GXq">
+    <mxGraphModel dx="1042" dy="622" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="TfUD5v9yEj7ZrF6l8VP9-1" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="User" vertex="1">
+          <mxGeometry height="60" width="40" x="80" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="TfUD5v9yEj7ZrF6l8VP9-4" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="TfUD5v9yEj7ZrF6l8VP9-5" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="120" y="60" as="sourcePoint" />
+            <mxPoint x="220" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TfUD5v9yEj7ZrF6l8VP9-7" edge="1" parent="1" source="TfUD5v9yEj7ZrF6l8VP9-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="TfUD5v9yEj7ZrF6l8VP9-6" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TfUD5v9yEj7ZrF6l8VP9-16" edge="1" parent="1" source="TfUD5v9yEj7ZrF6l8VP9-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="TfUD5v9yEj7ZrF6l8VP9-10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="220" y="190" />
+              <mxPoint x="420" y="190" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TfUD5v9yEj7ZrF6l8VP9-18" edge="1" parent="1" source="TfUD5v9yEj7ZrF6l8VP9-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="TfUD5v9yEj7ZrF6l8VP9-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TfUD5v9yEj7ZrF6l8VP9-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="API GATWAY" vertex="1">
+          <mxGeometry height="60" width="120" x="160" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="TfUD5v9yEj7ZrF6l8VP9-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="User/Login/Siugnup" vertex="1">
+          <mxGeometry height="60" width="120" x="80" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="TfUD5v9yEj7ZrF6l8VP9-17" edge="1" parent="1" source="TfUD5v9yEj7ZrF6l8VP9-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="TfUD5v9yEj7ZrF6l8VP9-8" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TfUD5v9yEj7ZrF6l8VP9-22" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="TfUD5v9yEj7ZrF6l8VP9-13">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="280" y="470" />
+            </Array>
+            <mxPoint x="280" y="270" as="sourcePoint" />
+            <mxPoint x="510" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TfUD5v9yEj7ZrF6l8VP9-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Categlog/Product Service" vertex="1">
+          <mxGeometry height="60" width="120" x="220" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="TfUD5v9yEj7ZrF6l8VP9-12" edge="1" parent="1" source="TfUD5v9yEj7ZrF6l8VP9-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="TfUD5v9yEj7ZrF6l8VP9-11" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TfUD5v9yEj7ZrF6l8VP9-21" edge="1" parent="1" source="TfUD5v9yEj7ZrF6l8VP9-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="TfUD5v9yEj7ZrF6l8VP9-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TfUD5v9yEj7ZrF6l8VP9-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Order Service" vertex="1">
+          <mxGeometry height="60" width="120" x="360" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="TfUD5v9yEj7ZrF6l8VP9-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Payment Service" vertex="1">
+          <mxGeometry height="60" width="120" x="360" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="TfUD5v9yEj7ZrF6l8VP9-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Inventory Service" vertex="1">
+          <mxGeometry height="60" width="120" x="520" y="440" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
