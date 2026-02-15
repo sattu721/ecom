@@ -1,0 +1,17 @@
+# Maven
+**/target/
+
+# Gradle
+**/build/
+
+# IDE
+**/.idea/
+**/.classpath
+**/.project
+
+# Logs
+**/*.log
+
+# OS
+.DS_Store
+Thumbs.db
