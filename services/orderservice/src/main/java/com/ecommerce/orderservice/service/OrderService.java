@@ -1,15 +1,18 @@
 package com.ecommerce.orderservice.service;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.ecommerce.common.exception.OutOfStockException;
 import com.ecommerce.common.exception.PaymentFailedException;
+import com.ecommerce.common.model.OrderCreatedEvent;
 import com.ecommerce.orderservice.cutomexception.OrderException;
 import com.ecommerce.orderservice.entity.OrderEntity;
 import com.ecommerce.orderservice.enums.OrderStatus;
 import com.ecommerce.orderservice.feignclient.InventoryClient;
 import com.ecommerce.orderservice.feignclient.PaymentClient;
+import com.ecommerce.orderservice.kafka.EventProducer;
 import com.ecommerce.orderservice.records.PaymentRequest;
 import com.ecommerce.orderservice.records.PaymentResponse;
 import com.ecommerce.orderservice.records.ProductDto;
@@ -25,6 +28,9 @@ public class OrderService {
 	private final ProductClientService productClientService;
 	private final InventoryClient inventoryClient;
 	private final PaymentClient paymentClient;
+
+	@Autowired
+	private final EventProducer producer;
 
 	@Transactional
 	public OrderEntity createOrder(OrderEntity order) {
@@ -50,7 +56,10 @@ public class OrderService {
 				throw new PaymentFailedException();
 			}
 			order.setStatus(OrderStatus.CREATED.name());
-			return repository.save(order);
+			order = repository.save(order);
+			producer.sendOrderCreated(
+					new OrderCreatedEvent(order.getId(), "satyendrapsingh@gmail.com", product.price()));
+			return order;
 		} else {
 			throw new OrderException("ORDER_FAILED", "Order creation failed");
 		}

@@ -3,8 +3,8 @@ package com.ecommerce.notificationservice.consumer;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Component;
 
-import com.ecommerce.notificationservice.model.OrderCreatedEvent;
-import com.ecommerce.notificationservice.model.PaymentCompletedEvent;
+import com.ecommerce.common.model.OrderCreatedEvent;
+import com.ecommerce.common.model.PaymentCompletedEvent;
 
 @Component
 public class NotificationConsumer {
