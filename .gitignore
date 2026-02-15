@@ -4,14 +4,14 @@
 # Gradle
 **/build/
 
-# IDE
-**/.idea/
+# Eclipse
 **/.classpath
 **/.project
+**/.settings/
+**/.factorypath
+
+# IntelliJ
+**/.idea/
 
 # Logs
 **/*.log
-
-# OS
-.DS_Store
-Thumbs.db
