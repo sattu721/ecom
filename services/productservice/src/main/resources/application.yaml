@@ -1,3 +1,5 @@
 spring:
   application:
-    name: product-service
+    name: product-service		
+  config:
+    import: optional:file:../../config/productservice/application.yaml
